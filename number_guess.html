@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Number guess</title>
+    </head>
+    <body>
+   <script>
+        //set minimum and maximun for the guess
+        var guess = prompt("Enter youur guess: ");    
+        const MIN_GUESS =1;
+        const MAX_GUESS =10;
+            
+        // create a computer guess    
+var computerguess =Math.floor(Math.random()*MAX_GUESS);
+       
+      
+    
+       //compare guesses, double == converts the sring the integer
+       if (computerguess === guess) {
+           document.write("<h1>Correct!<h1> ");
+       }
+       else {
+           document.write("<h1>incorrect.the number was" + computerguess + " </h1>");
+       }
+       //output the guess    
+        document.write("<h1>you guessed;"+guess);   
+        </script>
+
+    </body>
+</html>
